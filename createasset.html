@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Create Asset</title>
+</head>
+
+<body style="margin-left:50px;width:391px;">
+    <nav class="assetnav">
+
+    </nav>
+    <div id="AssetHeader" style="width:210px;">
+        <div class="assetimage">
+            <button class="imageclose"></button>
+        </div>
+        <div>
+            <h1 class="AssetName">Asset Name</h1>
+            <p1 class="AssetDescription">Click to edit the asset name & description</p1>
+        </div>
+
+        <h3 class="Quantity">Quantity</h3>
+        <div class="QuantityBtn">
+            <button class="add" style="background:var(linear-gradient(0deg, #F2F2F7 0%, #F2F2F7 100%));">+</button>
+            <p class="count">1</p>
+
+            <button class="subtract" style="background:var(linear-gradient(0deg, #F2F2F7 0%, #F2F2F7 100%));">-</button>
+
+        </div>
+
+
+    </div>
+    <div class="seperator"></div>
+    <div class="FContainer">
+
+        <form class="newassetform" name="newAsset" action="" onsubmit="" method="post">
+
+            <label for="ID">Asset ID:</label>
+            <input type="text" name="" class="forminput" style="margin-left:84px;"><br>
+            <label for="status">Status:</label>
+            <select style="margin-left:94px;width:180px">
+                <option value="Damaged">Damaged/Lost</option>
+                <option value="Ready">Ready to be deployed</option>
+            </select> <br>
+            <label>Minimum Quantity: </label>
+            <input type="number" name="" class="forminput" value=4 style="margin-left:10px;"><br>
+            <label>Email for alerts:</label>
+            <input type="email" name="" class="forminput" style="margin-left:30px;"> <br>
+            <label>Returnable:</label>
+            <input type="radio" name="option" class="radio" style="margin-left:60px;"> Yes
+            <input type="radio" name="option" class="radio"> No <br>
+            <label>Storage location: </label>
+            <input type="text" name="" class="forminput" value=" ex: Storage room 2, row A"
+                style="margin-left:15px;"><br>
+            <div class="seperator" style="margin-top:10px;"></div>
+            <!-- <input type="submit" value="Submit"> -->
+            <div class="asavediv">
+                <button class="saveform">Save</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

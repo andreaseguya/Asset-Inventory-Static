@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="javascript" src="app.js"></script>
+
+    <title>Landing</title>
+
+</head>
+
+<body>
+    <div class="homepage">
+        <h1>Homepage</h1>
+        <!-- 
+        {/* navigation helper ends here . home.js starts here */} -->
+        <header class="App-header">
+            <!-- {/* header covers top nav and checkout buttons */} -->
+            <div class="topnav">
+                <!-- {/* checkout/ in section */} -->
+
+                <div class="checkContainer">
+                    <a class="acheck" href="">
+                        <div id="checkin" name="checkin" class="checkIn">Check In</div>
+                    </a>
+                    <a class="achecko" href="">
+                        <div id="checkout" name="checkout" class="checkOut">Check Out</div>
+                    </a>
+
+                </div>
+            </div>
+        </header>
+
+
+        <div class=" mainbody">
+            <!-- {/* <p> Main body starts here</p> */} -->
+            <div class="searchbar">
+                <span class="searchIcon"></span>
+                <p class='searchp'>Search loanee or location</p>
+                <!-- {/* <span className="TextToSpeech"></span> */} -->
+            </div>
+            <!-- <p class="mainp">Search for a loanee or location then scan barcodes to assign items in bulk</p> -->
+            <div class="alerts">
+                <script>
+                    function newAsset() {
+                        document.getElementsByClassName(".newassetform").style.display = "block";
+                    }
+                    function noAsset() {
+                        document.getElementsByClassName()
+                    }
+                </script>
+                <!-- <script src="https://code.jquery.com/jquery-3.7.0.js">
+                    $(document).ready(function () {
+                        $(".alertb").on("click", function () {
+                            $(".newassetform").show();
+                        });
+                    });
+
+
+                </script> -->
+                <div class="tophalf">
+                    <h3 class=" alertheader"> No assets found</h3>
+                    <p1 class="alertp">Would you like to create an asset?</p1>
+                </div>
+                <div class="bottomhalf">
+                    <div class="seperator"></div>
+                    <!-- onclick open the form function with js -->
+                    <button class="alertb" id="alertb" onclick="window.location.href = './createasset.html'">
+                        <p1 class="alertpb">Yes</p1>
+                    </button>
+                    <!-- Need to add acrion.php or server side connection in action tab -->
+
+
+                    <div class="bseperator"></div>
+                    <button class="alertb2">
+                        <p1 class="alertpb">No</p1>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottomnav">
+        <!-- {/* // <p> Bottom nav starts here</p> */} -->
+
+        <div class="box">
+            <!-- Home button starts here -->
+            <div class="ellipse">
+                <button class="homeButton">
+                    <!-- {/* camera settings to scan in barcodes go here */} -->
+                    <div class="ScanIcon"></div>
+                </button>
+            </div>
+            <button class="AssetTab" onclick="window.location.href = './assets.html'"></button>
+            <button class="Admin" onclick="window.location.href=''"></button>
+            <button class="Kits" onclick="window.location.href=''"></button>
+            <button class="Settings" onclick="window.location.href=''"></button>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
